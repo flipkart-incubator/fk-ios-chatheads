@@ -4,105 +4,65 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-FCChatHeads-CMPopTipView.xcscheme</key>
+		<key>CMPopTipView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-FCChatHeads-FCChatHeads-FCChatHeads.xcscheme_^#shared#^_</key>
+		<key>FCChatHeads-FCChatHeads.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-FCChatHeads-FCChatHeads.xcscheme_^#shared#^_</key>
+		<key>FCChatHeads.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>Pods-FCChatHeads-pop.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-FCChatHeads.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
-		<key>Pods-Tests-CMPopTipView.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>Pods-Tests-FCChatHeads-FCChatHeads.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Pods-Tests-FCChatHeads.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>Pods-Tests-pop.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Tests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00E92FCC9B9E5437BFF1C371</key>
+		<key>301D1095CDA7825256864C8BE754C892</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19D01D566A2DEE8C98701047</key>
+		<key>4DC5C0801A9E3CED44E18F4F915705BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2CF61582C0A05ADFEAF8A154</key>
+		<key>65C56F96F2BD61FE58C830B685BC1817</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40EAEF1FAFABA1A777CC74C3</key>
+		<key>AC8F847423466875396275CB0AE8EAA0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6B1751829E72C4EA880F6238</key>
+		<key>CB999086D608C3C12BF1556BCAA6A6E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>78B650B544F859AF1790189E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>822DF86BE7D60C6914431143</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>929129BAFAD2CE1E6A8E17B1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BDA442D6F339085D7B7BA719</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EDB9988329578F56EEC5F969</key>
+		<key>E099BC60609B2D042D2DA99835E1A235</key>
 		<dict>
 			<key>primary</key>
 			<true/>
