@@ -13,7 +13,7 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import "CMPopTipView.h"
+#import <CMPopTipView/CMPopTipView.h>
 
 @interface FCPopOverView : CMPopTipView
 

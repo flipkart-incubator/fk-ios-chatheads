@@ -90,7 +90,7 @@
     self.backgroundColor = [UIColor clearColor];
     
     self.exclusiveTouch = YES;
-        
+    
     if (!_panGesture)
     {
         _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
@@ -127,11 +127,11 @@
         CGRect frame = CGRectMake(self.frame.size.width - 15.0, 0.0, 15.0, 15.0);
         _badge = [UILabel new];
         _badge.frame = frame;
-        _badge.layer.cornerRadius = 7.5;
+        _badge.layer.cornerRadius = 7.0;
         _badge.layer.masksToBounds = YES;
-        _badge.backgroundColor = [UIColor redColor];
+        _badge.backgroundColor = [UIColor colorWithRed:232.0/255.0 green:62.0/255.0 blue:50.0/255.0 alpha:1.0];
         _badge.textColor = [UIColor whiteColor];
-        _badge.font = [UIFont boldSystemFontOfSize:12.0];
+        _badge.font = [UIFont boldSystemFontOfSize:11.0];
         _badge.textAlignment = NSTextAlignmentCenter;
         
         [self addSubview:_badge];
@@ -219,13 +219,20 @@
         self.badge.hidden = (self.unreadCount == 0);
     }
     
-    CGSize textSize = [self.badge.text sizeWithFont:self.badge.font constrainedToSize:CGSizeMake(CHAT_HEAD_DIMENSION, CGFLOAT_MAX)];
-    CGRect frame = self.badge.frame;
-    frame.size.width = MAX(textSize.width + 5, 15.0);
-    frame.origin.x = self.frame.size.width - MAX(frame.size.width/2, 15.0);
-    self.badge.frame = frame;
+    [self layoutBadge];
 }
 
+- (void)layoutBadge
+{
+    CGRect frame = [self.badge.text boundingRectWithSize:CGSizeMake(CHAT_HEAD_DIMENSION, CGFLOAT_MAX)
+                                                 options:NSStringDrawingUsesLineFragmentOrigin
+                                              attributes:@{NSFontAttributeName : self.badge.font}
+                                                 context:nil];
+    frame.origin = self.badge.frame.origin;
+    frame.size.width = MAX(frame.size.width + 8, 15.0);
+    frame.origin.x = self.frame.size.width - frame.size.width/2;
+    self.badge.frame = frame;
+}
 
 #pragma mark -
 #pragma mark - Misc
@@ -267,11 +274,7 @@
             
             self.badge.text = text;
             
-            CGSize textSize = [self.badge.text sizeWithFont:self.badge.font constrainedToSize:CGSizeMake(CHAT_HEAD_DIMENSION, CGFLOAT_MAX)];
-            CGRect frame = self.badge.frame;
-            frame.size.width = MAX(textSize.width + 5, 15.0);
-            frame.origin.x = self.frame.size.width - MAX(frame.size.width/2, 15.0);
-            self.badge.frame = frame;
+            [self layoutBadge];
         }
     }
 }
