@@ -18,4 +18,4 @@
 #import <Foundation/Foundation.h>
 #import "FCChatHeadsController.h"
 #import "FCCHConstants.h"
-#import "CMPopTipView.h"
+#import <CMPopTipView/CMPopTipView.h>
