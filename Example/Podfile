@@ -1,12 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'FCChatHeads', :exclusive => true do
+target 'FCChatHeads' do
   pod "FCChatHeads", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
+target 'Tests' do
   pod "FCChatHeads", :path => "../"
-  #pod 'CMPopTipView'
   
 end
 
