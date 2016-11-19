@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FCChatHeads"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "Library to use chat heads within your iOS app."
   s.description      = <<-DESC
                         Library to use chat heads within your iOS app with complete physics and animations which drive multi user chat behaviour to support collapsed/stacked or expanded states.
